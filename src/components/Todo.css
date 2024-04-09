@@ -1,0 +1,46 @@
+div{
+    position:relative;
+     max-width:100%;
+     height:100vh;
+    background-color: aliceblue;}
+
+    .inputAndButton{
+       border-radius: 5px;
+        width:500px;
+        height:30em;
+        color:white;
+        margin:0 auto;
+        top:30%;
+        background-color: #4169e1;
+    }
+    input{
+        margin-top: 5em;
+        height:4em;
+        width:19em;
+        border-color:none;
+        border:none;
+    }
+    .addButton{
+        background-color:#c6d0ec ;
+        color:white;
+        padding:5px;
+        border-radius:5px;
+        width:4em;
+        border:none;
+        height:4em;
+        margin-right:5px;
+
+    }
+
+    ul{
+        list-style: none;
+        
+    }
+    li{
+      width:200px;
+      height:45px;
+      border-radius:5px;
+      margin-left: 90px;
+      background-color: bisque;
+      margin:20px;
+    }
