@@ -14,8 +14,19 @@ function Todo() {
         setName(""); 
     }
 
+
+
+    const deleteTodo = (id) => {
+        const updatedTodo = todo.filter((_, idx) => idx !== id);
+        setTodo(updatedTodo);
+    }
+    
+  
+    const updateTodo=()=>{
+        
+    }
     return (
-        <div>
+        <div class="mainContainer">
            <div class="inputAndButton">
            <input 
                 type="text"
@@ -26,10 +37,17 @@ function Todo() {
             />
             <button onClick={addTodo} class="addButton">ADD</button>
             <ul>
-                {todo.map((item, index) => (
-                    <li key={index}>{item}</li>
+                
+                {todo.map((item, id) => (
+                    <>
+                    <li key={id}>{item}</li>
+                   <button onClick={()=>deleteTodo(id)}>DELETE</button>
+                   <button onClick={()=>updateTodo(id)}>UPDATE</button>
+                    </>
                 ))}
+                
             </ul>
+
            </div>
           
         </div>
